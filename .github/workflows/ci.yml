@@ -23,11 +23,11 @@ jobs:
       - uses: dtolnay/rust-toolchain@2c7215f132e9ebf062739d9130488b56d53c060c # master; avoid the tag here to prevent dependabot from updating it
         with:
           toolchain: "1.85"
-      - name: Cache Cargo sources and tools
+      - name: Cache Cargo compiler outputs and tools
         uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2
         with:
-          prefix-key: fastboot-v1-sources
-          cache-targets: false
+          prefix-key: fastboot-v1
+          cache-workspace-crates: true
       - run: cargo test --all-targets
       - run: cargo test --doc
 
@@ -51,11 +51,11 @@ jobs:
         with:
           toolchain: "1.85"
           components: clippy
-      - name: Cache Cargo sources and tools
+      - name: Cache Cargo compiler outputs and tools
         uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2
         with:
-          prefix-key: fastboot-v1-sources
-          cache-targets: false
+          prefix-key: fastboot-v1
+          cache-workspace-crates: true
       - run: cargo clippy -- -D warnings
 
   allgreen:
