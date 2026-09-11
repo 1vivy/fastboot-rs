@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "repository": "fastboot-rs",
+  "baselineCommit": "f8710f49dcab72729d484447e9796abb8ccf6119",
+  "consumedRevision": "ff063ae5449e2244d75287de8d852daf01912ad0",
+  "upstreamComparison": "ca768fd7591900172433164ee91bfc2ca11d6e23",
+  "counting": "Each declared test and explicit subcase is listed; Rustdoc snippets and manual qualification cases are identified separately. Target-gated tests remain listed even when they cannot run on this host. Data fixtures/support scripts and historical reports are not test cases.",
+  "entries": [
+    {
+      "source": {
+        "name": "file_header_parse",
+        "path": "android-sparse-image/src/lib.rs",
+        "line": 226
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Android sparse image wire format: file header parse.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "file_header_roundtrip",
+        "path": "android-sparse-image/src/lib.rs",
+        "line": 245
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Android sparse image wire format: file header roundtrip.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "chunk_header_parse",
+        "path": "android-sparse-image/src/lib.rs",
+        "line": 260
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Android sparse image wire format: chunk header parse.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "chunk_header_roundtrip",
+        "path": "android-sparse-image/src/lib.rs",
+        "line": 277
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Android sparse image wire format: chunk header roundtrip.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "split_simple",
+        "path": "android-sparse-image/src/split.rs",
+        "line": 226
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Android sparse image wire format: split simple.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "split_multiple",
+        "path": "android-sparse-image/src/split.rs",
+        "line": 263
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Android sparse image wire format: split multiple.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_split_raw",
+        "path": "android-sparse-image/src/split.rs",
+        "line": 398
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Android sparse image wire format: split raw.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "rejects_short_or_excess_completions_and_changed_download_size",
+        "path": "fastboot-protocol/src/nusb.rs",
+        "line": 545
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: rejects short or excess completions and changed download size.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "fork-added",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "bounded_generic_commands",
+        "path": "fastboot-protocol/src/nusb.rs",
+        "line": 551
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: bounded generic commands.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "fork-added",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "parse_valid_u32",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 150
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: parse valid u32.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "parse_valid_u32_hex",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 159
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: parse valid u32 hex.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "parse_valid_u64_hex",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 168
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: parse valid u64 hex.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "parse_invalid_u32",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 180
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: parse invalid u32.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "parse_invalid_u32_hex",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 186
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: parse invalid u32 hex.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "response_parse_ok",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 191
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: response parse ok.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "response_parse_ok_with_null",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 197
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: response parse ok with null.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "response_parse_fail",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 203
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: response parse fail.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "response_parse_fail_with_null",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 209
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: response parse fail with null.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "response_parse_info",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 215
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: response parse info.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "response_parse_info_with_null",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 221
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: response parse info with null.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "response_parse_text",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 227
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: response parse text.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "response_parse_text_with_null",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 233
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: response parse text with null.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "response_parse_data",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 239
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: response parse data.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "response_parse_data_with_null",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 245
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: response parse data with null.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "response_parse_invalid",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 251
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: response parse invalid.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "response_parse_too_short",
+        "path": "fastboot-protocol/src/protocol.rs",
+        "line": 257
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "Fastboot response framing and bounded transport behavior: response parse too short.",
+      "owner": "fastboot-rs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    }
+  ],
+  "totals": {
+    "test": 26
+  },
+  "decisions": {
+    "keep": 26
+  }
+}
